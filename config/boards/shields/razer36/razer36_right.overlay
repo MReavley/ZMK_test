@@ -1,0 +1,7 @@
+#include "Razer_01.dtsi"
+
+&default_transform {
+		col-offset = <6>;
+};		
+
+//May need to add the col-gpios and flip it as in the crkbd example		

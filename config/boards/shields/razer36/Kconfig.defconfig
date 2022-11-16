@@ -1,0 +1,19 @@
+if SHIELD_razer36_left
+
+config ZMK_KEYBOARD_NAME
+		default "Razer 36"
+	
+config ZMK_SPLIT_ROLE_CENTRAL
+		default y
+	
+config SPI 
+		default y
+
+endif	
+
+if SHIELD_razer36_left || SHIELD_razer36_right	
+
+config ZMK_SPLIT
+		default y
+
+endif #overall		

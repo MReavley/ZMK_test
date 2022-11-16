@@ -1,0 +1,8 @@
+# Test_001
+
+config SHIELD_razer36_left
+	def_bool $(shields_list_contains, razer36_left)
+	
+config SHIELD_razer36_right
+	def_bool $(shields_list_contains, razer36_right)
+	

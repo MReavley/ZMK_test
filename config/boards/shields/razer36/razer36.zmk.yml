@@ -1,0 +1,12 @@
+file_format: "1"
+id: Razer_01
+name: Razer36
+type: shield
+url: https://github.com/MReavley
+requires: [seeeduino_xiao_ble]
+exposes: []
+features:
+  - keys
+siblings:
+  - Razer_01_LEFT
+  - Razer_01_RIGHT
