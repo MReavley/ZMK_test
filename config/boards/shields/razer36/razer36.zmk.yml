@@ -1,6 +1,10 @@
 file_format: "1"
 id: razer36
+<<<<<<< HEAD
 name: razer36
+=======
+name: Razer36
+>>>>>>> 454f4ef32c4b85784be0bb66bade7fb36b06e920
 type: shield
 url: https://github.com/MReavley
 requires: [seeeduino_xiao_ble]
@@ -9,4 +13,8 @@ features:
   - keys
 siblings:
   - razer36_left
+<<<<<<< HEAD
   - razer36_right
+=======
+  - razer36_right
+>>>>>>> 454f4ef32c4b85784be0bb66bade7fb36b06e920
