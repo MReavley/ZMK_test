@@ -8,5 +8,5 @@ exposes: []
 features:
   - keys
 siblings:
-  - Razer_01_LEFT
-  - Razer_01_RIGHT
+  - razer36_left
+  - razer36_right
