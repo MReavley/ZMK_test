@@ -1,4 +1,4 @@
-#include "Razer_01.dtsi"
+#include "razer36.dtsi"
 
 &default_transform {
 		col-offset = <6>;
