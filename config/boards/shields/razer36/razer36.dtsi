@@ -29,7 +29,7 @@
 / {
 
 	model = "razer36";
-	compatible = "MReavley,razer36"
+	compatible = "MReavley,razer36";
 
 	chosen {
 		zmk,kscan = &kscan;
