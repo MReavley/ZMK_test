@@ -26,7 +26,7 @@
 &xiao_serial { status = "disabled"; };
 
 
-&gpio1 { status = "enabled"; };
+&gpio1 { status = "on"; };
 
 / {
 
