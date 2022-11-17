@@ -14,5 +14,5 @@
 		, <&shift_reg 2 (GPIO_ACTIVE_HIGH)>
 		, <&shift_reg 1 (GPIO_ACTIVE_HIGH)>
 		, <&shift_reg 0 (GPIO_ACTIVE_HIGH)>;
-		;
+		
 };
