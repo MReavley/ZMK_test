@@ -1,6 +1,6 @@
 /*Note, need to bodge connections, as Xiao SCK is connected to 595-CS, and Xiao-MISO is connected 
  * to 595-SCK.
- * Change to Xiao-SCK to 595-SCK, Xiao-7 to 595-CS 
+ * Change to Xiao-SCK to 595-SCK, Xiao-0 to 595-CS 
  */ 
 
 
