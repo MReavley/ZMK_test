@@ -58,7 +58,6 @@
 	  
 	  diode-direction = "col2row";
 	  
-	  
 		
 	  row-gpios
 		= <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>

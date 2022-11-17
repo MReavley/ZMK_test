@@ -18,14 +18,3 @@ siblings:
 =======
   - razer36_right
 >>>>>>> 454f4ef32c4b85784be0bb66bade7fb36b06e920
-toolchain:
-  - zephyr
-  - gnuarmemb
-  - xtools
-supported:
-  - adc
-  - usb_device
-  - ble
-  - ieee802154
-  - pwm
-  - watchdog
