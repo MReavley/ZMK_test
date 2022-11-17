@@ -1,12 +1,12 @@
 #include "razer36.dtsi"
 
 &transform {
-		col-offset = <5>;
+		col-offset = <6>;
 };		
 
 //May need to add the col-gpios and flip it as in the crkbd example		
 
-&kscan0 {
+&kscan {
 	col-gpios
 		= <&shift_reg 5 (GPIO_ACTIVE_HIGH)>
 		, <&shift_reg 4 (GPIO_ACTIVE_HIGH)>
