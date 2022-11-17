@@ -16,4 +16,8 @@ config ZMK_SPLIT
 config SPI
 		default y
 
+
+CONFIG_ZMK_KSCAN_MATRIX_POLLING=y
+
+
 endif #overall		

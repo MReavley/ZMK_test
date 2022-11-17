@@ -26,8 +26,6 @@
 &xiao_serial { status = "disabled"; };
 
 
-&gpio1 { status = "on"; };
-
 / {
 
 	model = "razer36";
