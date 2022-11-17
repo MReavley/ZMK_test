@@ -1,6 +1,6 @@
 #include "razer36.dtsi"
 
-&default_transform {
+&transform {
 		col-offset = <5>;
 };		
 
