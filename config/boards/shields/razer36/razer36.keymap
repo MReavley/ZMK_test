@@ -10,7 +10,7 @@
 #define GAME 4
 #define GAME2 5
 
-
+/*
 / {
 	macros {
 		PTab: PTab {
@@ -30,6 +30,7 @@
 	};
 
 };
+*/
 
 / {
         keymap {
