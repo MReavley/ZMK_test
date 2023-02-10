@@ -48,7 +48,7 @@
    &kp LSHFT &kp SPACE &mo LTHUM   &mo RTHUM &kp BSPC &kp RET
                         >;
                 };
-/*                lower_layer {
+                lower_layer {
 // -----------------------------------------------------------------------------------------
 // | ESC |PTab |  Up |NTab |  %  |   |  +  |  7  |  8  |  9  |  =  |
 // | Tab | Left| Down|Right|  (  |   |  -  |  4  |  5  |  6  |  *  |
@@ -92,6 +92,6 @@
 				
 				
 				
-*/				
+				
         };
 };
