@@ -23,8 +23,8 @@ config SPI
 		default y
 
 
-config ZMK_KSCAN_MATRIX_POLLING
-		default y
+//config ZMK_KSCAN_MATRIX_POLLING
+//		default y
 
 
 endif #overall		
