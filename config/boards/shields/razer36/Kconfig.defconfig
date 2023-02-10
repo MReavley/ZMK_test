@@ -10,6 +10,9 @@ endif
 
 if SHIELD_razer36_left || SHIELD_razer36_right	
 
+config I2C 
+		default y
+
 config ZMK_SPLIT
 		default y
 
