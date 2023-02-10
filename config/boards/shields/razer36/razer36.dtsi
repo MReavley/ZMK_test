@@ -17,7 +17,7 @@
 		reg = <0>;
 		label = "4HC595";
 		#gpio-cells = <2>;
-		ngpios = <6>;
+		ngpios = <8>;
 	};
 
 };
@@ -66,11 +66,12 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)	  RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,
 	
 };	
 
-
-&gpio0 {
-	status = "okay";
-};
-
-&gpio1 {
-	status = "okay";
-};
+/*
+*&gpio0 {
+*	status = "okay";
+*};
+*
+*&gpio1 {
+*	status = "okay";
+*};
+*/
