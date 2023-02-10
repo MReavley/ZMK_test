@@ -1,7 +1,7 @@
 #include "razer36.dtsi"
 
 &transform {
-		col-offset = <6>;
+		col-offset = <7>;
 };		
 
 //May need to add the col-gpios and flip it as in the crkbd example		
