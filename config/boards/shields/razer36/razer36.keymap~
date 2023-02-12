@@ -70,9 +70,9 @@
 // | PgDn|VolDn|     | ']' | '}' |     | ScDn*|  :  |  ;  |  _  |  \  |
 //             |     |     | BTb |     | RTb  |     |     |
                         bindings = <
-   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &none    &trans    &trans   &trans    &kp AMPS
-   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &trans    &trans 	 &trans   &trans    &kp CARET
-   &kp PG_DN  &kp C_VOL_DN &trans   &kp RBKT  &kp RBRC       &trans    &kp COLON &kp SEMI &kp UNDER &kp BSLH
+   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &none    &none    &none   &none    &kp AMPS
+   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &none    &none 	 &none   &none    &kp CARET
+   &kp PG_DN  &kp C_VOL_DN &trans   &kp RBKT  &kp RBRC       &none    &kp COLON &kp SEMI &kp UNDER &kp BSLH
                     	   &trans   &trans    &mo BTHUM      &mo RTHUM &trans    &trans
                         >;
                 };
@@ -84,10 +84,10 @@
 // | NumL|  F9 | F10 | F11 | F12 |        |     |     |     |     |     |
 //             |GAME*|     | BTb |        |     |     |     |
                         bindings = <
-   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &trans &trans  &trans  &trans    &kp LG(LS(T))
+   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &bt_BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &kp LG(LS(T))
    &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &trans &trans 	&trans  &trans    &kp LG(LS(S))
    &kp PG_DN  &kp C_VOL_DN &trans   &kp RBKT  &kp RBRC       &trans &trans  &trans  &trans    &trans
-                    	   &trans   &trans    &trans         &trans &trans  &trans
+                    	   &trans   &trans    &trans         &trans &trans  &bootloader
                         >;
                 };
 				
