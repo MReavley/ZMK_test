@@ -11,6 +11,11 @@
 #define GAME 4
 #define GAME2 5
 
+
+&mmv {
+	time-to-max-speed-ms = <500>;
+     };
+
 /* ignore
 / {
 	macros {
