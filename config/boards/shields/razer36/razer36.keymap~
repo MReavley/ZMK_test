@@ -11,7 +11,7 @@
 #define GAME 4
 #define GAME2 5
 
-/*
+/* ignore
 / {
 	macros {
 		PTab: PTab {
