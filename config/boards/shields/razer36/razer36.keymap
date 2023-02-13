@@ -59,8 +59,8 @@
                         bindings = <
    &kp ESC   &kp LC(LS(TAB))  &kp UP    &kp LC(TAB) &kp PRCNT       &kp PLUS   &kp N7  &kp N8 &kp N9  &kp EQUAL 
    &kp TAB   &kp LEFT         &kp DOWN  &kp RIGHT   &kp LPAR        &kp MINUS  &kp N4  &kp N5 &kp N6  &kp STAR 
-   &kp LC(Z) &kp RET 		  &kp DEL   &kp BSPC    &kp RPAR        &kp N0     &kp N1  &kp N2 &kp N3  &kp FSLH 
-							  &trans    &kp LGUI    &mo LTHUM       &mo BTHUM  &kp DEL &kp TAB
+   &kp LC(Z) &kp RET          &kp DEL   &kp BSPC    &kp RPAR        &kp N0     &kp N1  &kp N2 &kp N3  &kp FSLH 
+	  		      &none     &kp LGUI    &mo LTHUM       &mo BTHUM  &kp DEL &kp TAB
                         >;
                 };
 
@@ -71,10 +71,10 @@
 // | PgDn|VolDn|     | ']' | '}' |     | ScDn*|  :  |  ;  |  _  |  \  |
 //             |     |     | BTb |     | RTb  |     |     |
                         bindings = <
-   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &mkp MCLK &mkp LCLK  &none   &mkp RCLK    &kp AMPS
-   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &none     &mmv MOVE_LEFT &none   &none    &kp CARET
-   &kp PG_DN  &kp C_VOL_DN &trans   &kp RBKT  &kp RBRC       &none     &kp COLON &kp SEMI &kp UNDER &kp BSLH
-                    	   &trans   &trans    &mo BTHUM      &mo RTHUM &trans    &trans
+   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &mkp MCLK        &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &kp AMPS
+   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &mwh SCROLL_UP   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp CARET
+   &kp PG_DN  &kp C_VOL_DN &none    &kp RBKT  &kp RBRC       &mwh SCROLL_DOWN &kp COLON      &kp SEMI       &kp UNDER       &kp BSLH
+                    	   &none    &none     &mo BTHUM      &mo RTHUM        &none          &none
                         >;
                 };
 				
@@ -85,10 +85,10 @@
 // | NumL|  F9 | F10 | F11 | F12 |        |     |     |     |     |     |
 //             |GAME*|     | BTb |        |     |     |     |
                         bindings = <
-   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &kp LG(LS(T))
-   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &trans &trans 	&trans  &trans    &kp LG(LS(S))
-   &kp PG_DN  &kp C_VOL_DN &trans   &kp RBKT  &kp RBRC       &trans &trans  &trans  &trans    &trans
-                    	   &trans   &trans    &trans         &trans &trans  &bootloader
+   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &none  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &kp LG(LS(T))
+   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &none  &none         &none        &trans        &kp LG(LS(S))
+   &kp PG_DN  &kp C_VOL_DN &trans   &kp RBKT  &kp RBRC       &none  &none         &none        &trans        &trans
+                    	&bootloader &none     &trans         &trans &none  &bt BT_CLR
                         >;
                 };
 				
@@ -96,4 +96,4 @@
 				
 				
         };
-};
+}

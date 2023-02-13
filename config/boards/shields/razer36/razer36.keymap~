@@ -71,8 +71,8 @@
 // | PgDn|VolDn|     | ']' | '}' |     | ScDn*|  :  |  ;  |  _  |  \  |
 //             |     |     | BTb |     | RTb  |     |     |
                         bindings = <
-   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &mkp MCLK &mkp LCLK  &none   &none    &kp AMPS
-   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &none     &none 	 &none   &none    &kp CARET
+   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &mkp MCLK &mkp LCLK  &none   &mkp RCLK    &kp AMPS
+   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &none     &mmv MOVE_LEFT &none   &none    &kp CARET
    &kp PG_DN  &kp C_VOL_DN &trans   &kp RBKT  &kp RBRC       &none     &kp COLON &kp SEMI &kp UNDER &kp BSLH
                     	   &trans   &trans    &mo BTHUM      &mo RTHUM &trans    &trans
                         >;
