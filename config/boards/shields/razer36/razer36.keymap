@@ -16,6 +16,8 @@
 	time-to-max-speed-ms = <500>;
      };
 
+&mwh
+
 /* ignore
 / {
 	macros {
@@ -43,7 +45,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
 // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  |
 // |Z/CTL|X/ALT|  C  |  V  |  B  |   |  N  |  M   |,/GUI|./ALT|/_CTL|
@@ -76,24 +78,24 @@
 // | PgDn|VolDn|     | ']' | '}' |     | ScDn*|  :  |  ;  |  _  |  \  |
 //             |     |     | BTb |     | RTb  |     |     |
                         bindings = <
-   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &mkp MCLK        &mkp LCLK      &mmv MOVE_VERT(-1200)   &mkp RCLK       &kp AMPS
-   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &mwh SCROLL_UP   &mmv MOVE_HOR(-1200) &mmv MOVE_VERT(1200) &mmv MOVE_HOR(1200) &kp CARET
-   &kp PG_DN  &kp C_VOL_DN &none    &kp RBKT  &kp RBRC       &mwh SCROLL_DOWN &kp COLON      &kp SEMI       &kp UNDER       &kp BSLH
-                    	   &none    &none     &mo BTHUM      &mo RTHUM        &none          &none
+   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &mkp MCLK             &mkp LCLK            &mmv MOVE_VERT(-1200) &mkp RCLK           &kp AMPS
+   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &mwh SCROLL_VERT(20)  &mmv MOVE_HOR(-1200) &mmv MOVE_VERT(1200)  &mmv MOVE_HOR(1200) &kp CARET
+   &kp PG_DN  &kp C_VOL_DN &none    &kp RBKT  &kp RBRC       &mwh SCROLL_VERT(-20) &kp COLON            &kp SEMI              &kp UNDER           &kp BSLH
+                    	   &none    &none     &mo BTHUM      &mo RTHUM             &none                &none
                         >;
                 };
 				
 				combo_layer {
-				// -----------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
 // |  `  |  F1 |  F2 |  F3 |  F4 |        |     |     |     |     |TxtSt|
 // | INS |  F5 |  F6 |  F7 |  F8 |        |     |     |     |     |ScnSt|
 // | NumL|  F9 | F10 | F11 | F12 |        |     |     |     |     |     |
 //             |GAME*|     | BTb |        |     |     |     |
                         bindings = <
-   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &none  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &kp LG(LS(T))
-   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &none  &none         &none        &trans        &kp LG(LS(S))
-   &kp PG_DN  &kp C_VOL_DN &trans   &kp RBKT  &kp RBRC       &none  &none         &none        &trans        &trans
-                    	&bootloader &none     &trans         &trans &none  &bt BT_CLR
+   &kp TILDE  &kp EXCL 	   &kp AT   &kp HASH  &kp DLLR       &none             &bt BT_SEL 0      &bt BT_SEL 1 &bt BT_SEL 2  &kp LG(LS(T))
+   &kp PG_UP  &kp C_VOL_UP &kp PIPE &kp LBKT  &kp LBRC       &none             &none             &none        &trans        &kp LG(LS(S))
+   &kp PG_DN  &kp C_VOL_DN &trans   &kp RBKT  &kp RBRC       &kp LG(LC(LA(1))) &kp LG(LC(LA(2))) &none        &trans        &trans
+                    	&bootloader &none     &trans         &trans            &none             &bt BT_CLR
                         >;
                 };
 				
